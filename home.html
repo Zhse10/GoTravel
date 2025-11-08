@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid px-3">
     <a class="navbar-brand fw-bold" href="home.html">GoTravel</a>
@@ -21,15 +22,24 @@
   </div>
 </nav>
 
-<div class="container text-center mt-4">
-  <h3 class="fw-bold">Welcome to GoTravel</h3>
-  <p class="text-muted">Discover amazing destinations and experiences.</p>
+<!-- Hero Banner -->
+<section class="hero-section">
+  <h2>Explore Your Next Destination</h2>
+  <p>Find inspiration and plan your perfect getaway with GoTravel.</p>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search destinations...">
+    <button id="searchBtn">Search</button>
+  </div>
+</section>
 
-  <div class="row mt-4">
+<!-- Featured Destinations -->
+<div class="container text-center mt-5">
+  <h3 class="fw-bold mb-4">Featured Places</h3>
+  <div class="row">
     <div class="col-md-4 mb-3">
       <a href="gallery.html#malaysia">
         <div class="card">
-          <img src="images/malaysia.jpg" class="card-img-top" alt="Malaysia">
+          <img src="images/malaysia.jpg" alt="Malaysia">
           <div class="card-body">
             <h5>Malaysia</h5>
             <p>Culture, food, and nature at its best.</p>
@@ -41,7 +51,7 @@
     <div class="col-md-4 mb-3">
       <a href="gallery.html#bali">
         <div class="card">
-          <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+          <img src="images/bali.jpg" alt="Bali">
           <div class="card-body">
             <h5>Bali</h5>
             <p>Peaceful beaches and vibrant culture.</p>
@@ -53,10 +63,46 @@
     <div class="col-md-4 mb-3">
       <a href="gallery.html#paris">
         <div class="card">
-          <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+          <img src="images/paris.jpg" alt="Paris">
           <div class="card-body">
             <h5>Paris</h5>
             <p>City of romance and lights.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <a href="gallery.html#tokyo">
+        <div class="card">
+          <img src="images/tokyo.jpg" alt="Tokyo">
+          <div class="card-body">
+            <h5>Tokyo</h5>
+            <p>Modern technology meets timeless tradition.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <a href="gallery.html#london">
+        <div class="card">
+          <img src="images/london.jpg" alt="London">
+          <div class="card-body">
+            <h5>London</h5>
+            <p>Iconic landmarks and royal heritage.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <a href="gallery.html#dubai">
+        <div class="card">
+          <img src="images/dubai.jpg" alt="Dubai">
+          <div class="card-body">
+            <h5>Dubai</h5>
+            <p>Luxury city of innovation and adventure.</p>
           </div>
         </div>
       </a>
@@ -65,9 +111,22 @@
 </div>
 
 <footer class="footer">
-  © 2025 GoTravel | Travel made simple
+  <p>© 2025 GoTravel | Designed with ❤️ for explorers</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+  document.getElementById("searchBtn").addEventListener("click", function() {
+    const query = document.getElementById("searchInput").value.trim().toLowerCase();
+    const destinations = ["malaysia","bali","paris","tokyo","london","dubai"];
+    const match = destinations.find(d => query.includes(d));
+    if (match) {
+      window.location.href = `gallery.html#${match}`;
+    } else {
+      alert("Destination not found. Try Malaysia, Bali, Paris, Tokyo, London, or Dubai.");
+    }
+  });
+</script>
 </body>
 </html>
