@@ -1,0 +1,76 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E1D0B3;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+/* === Navbar === */
+.navbar-custom {
+  background-color: #9BB4C0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom a {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-custom a:hover {
+  color: #703B3B;
+  text-decoration: underline;
+}
+
+/* === Headings === */
+h3, h4, h5 {
+  font-weight: 600;
+  color: #703B3B;
+}
+
+/* === Buttons === */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #A18D6D;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #703B3B;
+  transform: scale(1.03);
+}
+
+/* === Cards === */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* === Carousel === */
+.carousel img {
+  object-fit: cover;
+  height: 260px;
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+/* === Gallery Grid === */
+.gallery-grid {
+  display: grid;
+  grid
