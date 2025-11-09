@@ -27,6 +27,18 @@ body {
   color: var(--deep);
   text-decoration: underline;
 }
+.navbar-brand {
+  font-size: 1.4rem;
+  color: #703B3B !important;
+}
+
+.navbar img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar img:hover {
+  transform: scale(1.08);
+}
 
 .btn {
   border-radius: 10px;
