@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid px-3 d-flex align-items-center justify-content-between">
     <div class="d-flex align-items-center">
-      <img src="images/GoTravel.png" alt="GoTravel Logo" style="height:45px; width:auto; margin-right:10px;">
+      <img src="images/GoTravel.png" alt="GoTravel Logo" style="height:68px; width:auto; margin-right:10px;">
       <a class="navbar-brand fw-bold" href="home.html">GoTravel</a>
     </div>
     <div>
@@ -43,7 +43,7 @@
   <div class="container text-center mt-5">
     <h3 class="fw-bold mb-4">Featured Places</h3>
     <div class="row">
-      <div class="col-md-4 mb-3"><a href="gallery.html#malaysia"><div class="card"><img src="images/malaysia.jpg"><div class="card-body"><h5>Malaysia</h5><p>Culture, food, and nature at its best.</p></div></div></a></div>
+      <div class="col-md-4 mb-3"><a href="gallery.html#kualalumpur"><div class="card"><img src="images/malaysia.jpg"><div class="card-body"><h5>Kuala Lumpur</h5><p>Culture, food, and nature at its best.</p></div></div></a></div>
       <div class="col-md-4 mb-3"><a href="gallery.html#bali"><div class="card"><img src="images/bali.jpg"><div class="card-body"><h5>Bali</h5><p>Peaceful beaches and vibrant culture.</p></div></div></a></div>
       <div class="col-md-4 mb-3"><a href="gallery.html#paris"><div class="card"><img src="images/paris.jpg"><div class="card-body"><h5>Paris</h5><p>City of romance and lights.</p></div></div></a></div>
       <div class="col-md-4 mb-3"><a href="gallery.html#tokyo"><div class="card"><img src="images/tokyo.jpg"><div class="card-body"><h5>Tokyo</h5><p>Modern technology meets timeless tradition.</p></div></div></a></div>
@@ -66,7 +66,7 @@
 <script>
 document.getElementById("searchBtn").addEventListener("click", function() {
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
-  const destinations = ["malaysia","bali","paris","tokyo","london","dubai"];
+  const destinations = ["kualalumpur","bali","paris","tokyo","london","dubai"];
   const match = destinations.find(d => query.includes(d));
   if (query === "") {
     document.getElementById("searchInput").classList.add("input-error");
@@ -74,7 +74,7 @@ document.getElementById("searchBtn").addEventListener("click", function() {
   } else if (match) {
     window.location.href = `gallery.html#${match}`;
   } else {
-    alert("Destination not found. Try Malaysia, Bali, Paris, Tokyo, London, or Dubai.");
+    alert("Destination not found. Try Kuala Lumpur, Bali, Paris, Tokyo, London, or Dubai.");
   }
 });
 </script>
